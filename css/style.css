@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-image: url('../images/movie-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 15vh;
+}
+
+.header .title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3.5rem;
+}
+
+.form {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form .input-field {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.main {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-color: #f8f8ff;
+    min-height: 85vh;
+}
+
+.delete-and-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.delete-and-search .btn-search {
+    background-color: #042940;
+    color: #fff;
+    padding: 0.45rem 1rem;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    transition: all .4s;
+}
+
+.delete-and-search .btn-search:hover {
+    background-color: #030608;
+}
+
+.delete-and-search .icon-delete {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.delete-and-search .icon-delete:hover {
+    color: #005C53;
+}
+
+.initial-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.initial-part h3 {
+    order: 2;
+}
+
+.initial-part button {
+    order: 1;
+    background-color: #005C53;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 0.6rem 1rem;
+    text-align: right;
+    margin-top: 1rem;
+    transition: all .4s;
+}
+
+.initial-part button:hover {
+    background-color: #000;
+}
+
+.list-movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 3rem 0;
+}
+
+.link-movie {
+    text-decoration: none;
+    color: #000;
+}
+
+.link-movie:hover {
+    color: #000;
+}
+
+.item {
+    border-radius: 0px 0px 8px 8px;
+    transition: all .6s;
+}
+
+.item .link-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.item .link-movie:hover {
+    color: #005C53;
+}
+
+
+.item:not(.item-without-poster):hover {
+    background-color: #eaeaf0;
+}
+
+.item:hover img {
+    filter: brightness(0.6);
+    border-radius: 8px 8px 0 0;
+}
+
+.item h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    padding: 0 2rem;
+}
+
+.item img {
+    width: 280px;
+    height: 450px;
+    border-radius: 8px;
+    transition: all .6s;
+}
+
+
+.button-group > div {
+    text-align: center;
+}
+
+.button-group button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-group button {
+    background-color: #005C53;
+    color: #fff;
+    padding: 0.6rem 1.6rem;
+    border-radius: 8px;
+    border: none;
+    transition: all .4s;
+}
+
+.button-group .btn-previous {
+    margin-right: 1rem;
+}
+
+.button-group .btn-previous:hover {
+    background-color: #042940;
+    transform: translateX(-5px);
+}
+
+.button-group .btn-next:hover {
+    background-color: #042940;
+    transform: translateX(5px);
+}
+
+#selectPage {
+    padding: 6px;
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+    width: 200px; 
+    background-color: #fff;
+    margin-top: 1rem;
+    margin: 0 auto;
+}
+
+#selectPage option {
+    color: #333; 
+}
+
+#selectPage option:checked {
+    background-color: #042940; 
+    color: #fff;
+}
+
+.page-number {
+    font-weight: bold;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.footer {
+    background-color: #005C53;
+    color: #fff;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.copy {
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .4s;
+}
+
+.social a:hover {
+    color: #887979;
+    transform: translateY(2px);
+}
+
+
+
+
+
+.text-error-empty {
+    color: red;
+    margin-top: 0.2rem;
+}
+
+.text-error-notFound {
+    text-align: center;
+    color: #005C53;
+    margin: 0 auto;
+}
+
+.border-red {
+    border: 1px solid red !important;
+}
+
+.hide {
+    display: none;
+}
+
+.movie-without-poster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 285px;
+    height: 450px;
+    padding: 0 0.5rem;
+    border: 1px solid #042940;
+    background-image: url('../images/default-movie.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.movie-without-poster h2 {
+    font-weight: bold;
+    color: #000;
+    
+}
+
+.item-without-poster:hover  {
+    background-color: transparent;
+    filter: brightness(0.7) !important;
+}
+
+@media (min-width: 768px) {
+    .item {
+        width: 45%;
+    }
+
+    .footer .container {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .social p {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .item {
+        width: 30%;
+    }
+
+    .form {
+        margin-bottom: 2rem;
+    }
+
+    .delete-and-search {
+        gap: 1rem;
+    }
+
+    .delete-and-search .icon-delete {
+        font-size: 1.6rem;
+    }
+
+    .initial-part {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .initial-part h3 {
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    .initial-part button {
+        order: 2;
+        margin-top: 0;
+    }
+
+    .button-group {
+        position: relative;
+    }
+
+    #selectPage {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+    }
+    
+    .social a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1540px) {
+    .header {
+        height: 18vh;
+    }
+
+    .main {
+        min-height: 82vh;
+    }
+
+    .item {
+        width: 22%;
+    }
+
+    .button-group {
+        position: relative;
+    }
+
+    #selectPage {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+    }
+}
